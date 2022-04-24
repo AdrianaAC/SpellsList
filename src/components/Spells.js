@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
-export default function Spells() {
-    const [spells, setSpells] = useState([])
+export default function Spells(props) {
+    const [spells, setSpells] = useState([]);
+    // const [spellID, setSpellID] = useState();
     
     // let spellName = [];
     // let spellNameJSX = [];
@@ -30,7 +31,8 @@ export default function Spells() {
     }
 
     function handleClick(id) {
-        console.log(id)
+        // console.log(id)
+        props.setSpellID(id)
     }
 
 
