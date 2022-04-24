@@ -5,15 +5,16 @@ import './App.css';
 
 function App() {
     const [spellID, setSpellID] = useState();
+    const [spell, setSpell] = useState({})
   return (
     <div className="App">
       <div className="list">
-        <h2>Spells list</h2>
-        <Spells setSpellID={setSpellID}/>
+        <h2 onClick={() => {console.log(spell)}}>Spells list</h2>
+        <Spells setSpellID={setSpellID} setSpell={setSpell}/>
       </div>
       <div className="detailCard">
         <h3>Selected spell</h3>
-        <SpellCard/>
+        <SpellCard spell={spell}/>
       </div>
     </div>
   );

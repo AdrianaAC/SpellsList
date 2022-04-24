@@ -8,22 +8,21 @@
   border: 10px black solid;
 }
 
-.detailCard{
+.detailCard {
   flex-direction: column;
   border: 10px black solid;
 }
 
-.list{
+.list {
   flex-direction: column;
   border: 10px black solid;
 }
 
-.listBox{
+.listBox {
   border: 2px black solid;
-  height:550px;
+  height: 550px;
   overflow: scroll;
 }
-
 
 .spell-card {
   flex-basis: 225px;
