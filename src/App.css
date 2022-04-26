@@ -20,7 +20,9 @@
 
 .listBox {
   border: 2px black solid;
-  height: 550px;
+  height: 515px;
+  width: 300px;
+  margin: 15px;
   overflow: scroll;
 }
 
@@ -28,9 +30,21 @@
   flex-basis: 225px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   padding: 13px;
   padding-bottom: 20px;
   background-color: white;
+}
+
+.checkboxForm{
+  display: inline-block;
+  width: 250px;
+  margin-bottom: 10px;
+
+}
+
+.labelCheckbox{
+
 }
