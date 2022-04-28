@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function SpellCard(props) {
 	// const [img, setImg] = useState("../images/blue");

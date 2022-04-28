@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import Spells from "./components/Spells"
-import SpellCard from "./components/SpellCard"
+import Spells from "./components/Spells";
+import SpellCard from "./components/SpellCard";
 import './App.css';
 
 function App() {
