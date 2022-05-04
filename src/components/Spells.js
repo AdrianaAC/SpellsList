@@ -42,9 +42,10 @@ export default function Spells(props) {
     props.setSpell(obj);
     }
 
+ 
   return (
     <div>
-      {/* <Form/> */}
+      {/* <Form list={spells}/>  */}
       <br/><button onClick={spellsListing}>Accio!</button>
       {/* <br/><button onClick={spellsReverse}>Reverse Accio!</button> */}
       <div className="listBox">

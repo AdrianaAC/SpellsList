@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 
 
-export default function Form(){
+export default function Form(props){
+    const [filteredSpells, setFilteredSpells] = useState([])
     const [formData, setFormData] = useState(
         {
             all: true,
@@ -14,6 +15,19 @@ export default function Form(){
             other: false
         }
     )
+  
+    for(let i = 0; i<props.list.length; i++){
+        
+
+        if(formData.all) {
+            return setFilteredSpells( {
+                name: props.list[i].name,
+                id: props.list[i].id
+            })
+        }
+        console.log(filteredSpells)
+    }
+    
     
     //Handle Change function can fit various types of input
     function handleChange(event) {
